@@ -1,0 +1,12 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-client
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-adddress}:${server.port}
+  client:
+    service-url:
+      deaflutZone:

@@ -1,0 +1,17 @@
+server:
+  port: 8081
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    refer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+  client:
+    service-url:
+      defaultZone: http://${spring.cloud.client.ip-address}:${server.port}/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
+    enabled: true
+spring:
+  application:
+    name: eureka-server
