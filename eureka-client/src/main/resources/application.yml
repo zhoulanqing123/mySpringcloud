@@ -1,12 +1,37 @@
+#单机版本
+#server:
+#  port: 8080 #客户端的端口没有要求
+#spring:
+#  application:
+#    name: eureka-client
+#eureka:
+#  client: #客户端相关的配置
+#    service-url: #指定注册地址
+#      deaflutZone: http://localhost:8761/eureka
+#    register-with-eureka: true #可以不往eureka-server注册
+#    fetch-registry: true  #是否拉取服务端注册列表
+#    registry-fetch-interval-seconds: 15 #为了缓解服务列表的脏堵问题  每隔X秒去服务端拉取注册列表 时间越短脏读越少 性能消耗大
+#  instance:
+#    hostname: localhost
+#    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+#    lease-renewal-interval-in-seconds: 10 # 实例续约时间
+#    prefer-ip-address: true
+
+#集群版本
 server:
-  port: 8761
+  port: 8080 #客户端的端口没有要求
 spring:
   application:
     name: eureka-client
 eureka:
+  client: #客户端相关的配置
+    service-url: #指定注册地址
+      deaflutZone: http://localhost:8761/eureka
+    register-with-eureka: true #可以不往eureka-server注册
+    fetch-registry: true  #是否拉取服务端注册列表
+    registry-fetch-interval-seconds: 15 #为了缓解服务列表的脏堵问题  每隔X秒去服务端拉取注册列表 时间越短脏读越少 性能消耗大
   instance:
+    hostname: localhost
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    lease-renewal-interval-in-seconds: 10 # 实例续约时间
     prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-adddress}:${server.port}
-  client:
-    service-url:
-      deaflutZone:

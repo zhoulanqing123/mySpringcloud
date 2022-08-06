@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client2/eureka-client2.iml" filepath="$PROJECT_DIR$/eureka-client2/eureka-client2.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server2/eureka-server2.iml" filepath="$PROJECT_DIR$/eureka-server2/eureka-server2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server3/eureka-server3.iml" filepath="$PROJECT_DIR$/eureka-server3/eureka-server3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mySpringCloud.iml" filepath="$PROJECT_DIR$/.idea/mySpringCloud.iml" />
     </modules>
   </component>
