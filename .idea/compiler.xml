@@ -6,28 +6,43 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka-client" />
+        <module name="provider-b" />
         <module name="eureka-server" />
-        <module name="eureka-client2" />
-        <module name="eureka-server2" />
+        <module name="eureka-client" />
         <module name="eureka-server3" />
+        <module name="eureka-server2" />
+        <module name="provider-a" />
+        <module name="ribbon" />
+        <module name="eureka-client2" />
+        <module name="consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consumer" target="1.8" />
+      <module name="demo" target="17" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-client2" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="eureka-server2" target="1.8" />
       <module name="eureka-server3" target="1.8" />
+      <module name="peorvider-b" target="1.8" />
+      <module name="provider-a" target="1.8" />
+      <module name="provider-b" target="1.8" />
+      <module name="ribbon" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-client2" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="eureka-server2" options="-parameters" />
       <module name="eureka-server3" options="-parameters" />
+      <module name="peorvider-b" options="-parameters" />
+      <module name="provider-a" options="-parameters" />
+      <module name="provider-b" options="-parameters" />
     </option>
   </component>
 </project>
